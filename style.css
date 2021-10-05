@@ -1,0 +1,50 @@
+/* https://lh3.googleusercontent.com/proxy/joYuyrkrcVjl5GSuzFzww4Dipp42BUwYfZdOjBYPyjHi9Ea-rO5mIflZSkS3Ly14evg0LqM9LQIPUkd1eNbp9fXH6XteTbj-A4W3jP7q4jZRuiFMaqZvbd6uMZHoD-M */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    /* min-height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 7rem  auto;
+    grid-gap: .5rem;
+    background-color: black;
+    margin-bottom: 2rem;
+    
+
+}
+
+section{
+    /* border: solid; */
+    /* background-color: lightseagreen; */
+    grid-column: 1/-1;
+    /* background-color: black; */
+}
+.sec1{
+    background-color:darkslategray ;
+    
+}
+.sec2{
+    /* background-color: black; */
+    /* background-image: url('media/chair\ tabel.png');  */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    /* opacity: .5; */
+    margin-bottom: 2rem;
+    /* min-width: 1920px; */
+}
+.ec2 img{
+    width: 100%;
+}
+
+
+
+
+
+
