@@ -16,14 +16,17 @@ body{
 /* ------------------------------------------- */
 /* section =>1 */
 .sec1{
+    width: 100%;
     background-color: rgb(22, 22, 22);
-    height: 12vh;
+    height: 4rem;
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-content:end;
     margin-bottom:.5rem;
+    z-index: 2;
+    position: relative;
 }
-.sec1 a{  /* practice button */
+.sec1 a{  /* practice(home) button */
     margin-left: 1rem;
     margin-bottom: 1rem;
     justify-self: start;
@@ -54,16 +57,25 @@ body{
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+/* [.hanging] */
+.hanging{
+    position: absolute;
+    width: 8rem;
+    margin-top: -2rem;
+    left: 5%;
+    z-index: 1;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 /* section =>2 */
 .sec2{
     margin-bottom: 2rem;
     position: relative;
-    background-image: url('media/chair\ tabel.png');
-    background-position: top;
+    background-image: url('media/sec2-bg.jpg');
+    background-position: bottom;
     background-repeat:no-repeat;
     background-size:cover;
-    background-attachment: 
-    ;
     min-height: 100vh;
 }
 .sec2-body{
@@ -75,6 +87,8 @@ body{
 }
 .sec2-body p{
     font-size: 1vw;
+    padding: 0 5%;
+    text-align: center;
 }
 /* ------------------------------------------- */
 /* ------------------------------------------- */
@@ -112,6 +126,8 @@ body{
 .sec2-body .mid-field{
     grid-column: 1/-1;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 .mid-field img{
     width: 4rem;
@@ -122,4 +138,21 @@ body{
     height: .1rem;
     display: inline-block;
     margin-bottom: 1.5rem;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section => 2 [.img1, .img2] */
+.sec2-body>img{
+    width: 25%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: .5rem;
+}
+.img1{
+    left:-4%;    
+}
+.img2{
+    right: -4%;
 }
