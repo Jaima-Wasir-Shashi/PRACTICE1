@@ -3,46 +3,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* body */
 body{
-    /* min-height: 100vh; */
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 7rem  auto;
-    grid-gap: .5rem;
-    background-color: black;
-    margin-bottom: 2rem;
     
-
 }
-
-section{
-    /* border: solid; */
-    /* background-color: lightseagreen; */
-    grid-column: 1/-1;
-    /* background-color: black; */
-}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section =>1 */
 .sec1{
-    background-color:darkslategray ;
-    
+    background-color: rgb(22, 22, 22);
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-content:end;
+    margin-bottom:.5rem;
 }
+.sec1 a{  /* practice button */
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+.sec1 a:hover{
+    text-shadow: 0 0 15px white;
+    color: black;
+}
+.sec1 nav{
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+    margin-bottom: ;
+}
+.sec1 nav a{
+    color:rgb(112, 112, 112);
+    text-decoration: none;
+    padding: 0 .5rem;
+}
+.sec1 nav a:hover{
+    text-shadow: 0 0 20px white;
+    color: black;
+    font-weight: 700;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section =>2 */
 .sec2{
-    /* background-color: black; */
-    /* background-image: url('media/chair\ tabel.png');  */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover; */
-    /* opacity: .5; */
     margin-bottom: 2rem;
-    /* min-width: 1920px; */
+    position: relative;
+    background-image: url('media/chair\ tabel.png');
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: 
+    ;
+    min-height: 100vh;
 }
-.ec2 img{
-    width: 100%;
+.sec2-body{
+    margin: 0 15%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem 1rem;
 }
-
+.sec2-body p{
+    font-size: 1vw;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section 2 =>[div=>1,2] */
+.sec2-body .div1,.sec2-body .div2{
+    grid-column: 1/-1;
+    margin-top: 5%;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section 2 =>[div =>3[content 1],div =>4[content 2],div =>5[content 3] */
+.sec2-body .div3,.sec2-body .div4,.sec2-body .div5{
+    background-color: rgba(44, 44, 44, 0.596);
+    min-height: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 20%;
+    padding: .5rem 0;
+}
+.sec2-body a{
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-weight: 700;
+}
+.sec2-body a:hover{
+    text-shadow: 0 0 15px lightgreen;
+    color: black;
+}
 
 
 
