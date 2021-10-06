@@ -105,8 +105,21 @@ body{
     text-shadow: 0 0 15px lightgreen;
     color: black;
 }
-
-
-
-
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* section 2 =>[.mid-feild] */
+.sec2-body .mid-field{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.mid-field img{
+    width: 4rem;
+}
+.mid-field p{
+    background-color: black;
+    width: 30%;
+    height: .1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
